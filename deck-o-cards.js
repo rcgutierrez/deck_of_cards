@@ -54,7 +54,7 @@ function deck_o_cards() {
 
   // Pull the top card from the newly shuffledCards
 
-  var topCard = shuffledCards[1];
+  var topCard = shuffledCards[0];
 
   // 3. Print the results:
   // "The deck has {n} cards"
