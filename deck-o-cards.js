@@ -11,11 +11,8 @@ function deck_o_cards() {
 
   // Makes 52 card objects and store them in the "cards" array
   for (i=0; i < suits.length; i++){
-    var currentSuit = suits[i];
     for (p=0; p < values.length; p++){
-      var currentValue = values[p];
-      var objToAdd = {suit: currentSuit, value: currentValue};
-      cards[objIndex] = objToAdd;
+      cards[objIndex] = {suit: suits[i], value: values[p]};
       objIndex += 1;
     };
   };
@@ -49,7 +46,7 @@ function deck_o_cards() {
       pokerStatement += "and a(n) " + pokerHand[i].value + " of " + pokerHand[i].suit + ". ";
       break;
     }
-    pokerStatement += "a(n) " + pokerHand[i].value + " of " + pokerHand[i].suit + ", ";
+    pokerStatement += " " + pokerHand[i].value + " of " + pokerHand[i].suit + ",";
   }
 
   // Pull the top card from the newly shuffledCards
