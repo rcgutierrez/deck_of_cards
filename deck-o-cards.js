@@ -34,6 +34,7 @@ function deck_o_cards() {
       return array;
   };
 
+  //shuffles cards
   shuffledCards = shuffle(cards);
 
   //Makes poker hand
